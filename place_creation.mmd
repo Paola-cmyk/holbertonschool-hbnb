@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant User
+    participant API
+    participant PlaceService
+    participant PlaceModel
+    participant Database
+
+    User->>API: POST /places (place data)
+    API->>PlaceService: validatePlaceData(data)
+    PlaceService->>PlaceModel: createPlace(data)
+    PlaceModel->>Database: INSERT INTO places
+    Database-->>PlaceModel: Place created
+    PlaceModel-->>PlaceService: return place object
+    PlaceService-->>API: return success response
+    API-->>User: 201 Created + place info

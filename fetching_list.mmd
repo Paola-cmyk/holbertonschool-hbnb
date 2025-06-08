@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant User
+    participant API
+    participant PlaceService
+    participant PlaceModel
+    participant Database
+
+    User->>API: GET /places?location=Paris&guests=2
+    API->>PlaceService: getFilteredPlaces(queryParams)
+    PlaceService->>PlaceModel: buildQuery(queryParams)
+    PlaceModel->>Database: SELECT * FROM places WHERE filters
+    Database-->>PlaceModel: return list of places
+    PlaceModel-->>PlaceService: return places
+    PlaceService-->>API: return places list
+    API-->>User: 200 OK + places[]
