@@ -38,7 +38,7 @@ direction TB
     PresentationLayer --> BusinessLogicLayer : Facade Pattern
     BusinessLogicLayer --> PersistenceLayer : Database Operations
     ```
-
+---
 	# Sequence Diagrams for API Calls
 
 <a href="https://github.com/Paola-cmyk/holbertonschool-hbnb/blob/main/part1/user_registration.mmd" target="_blank">**Diagram**</a>
