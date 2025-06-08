@@ -1,0 +1,17 @@
+``` mermaid
+sequenceDiagram
+    participant User
+    participant API
+    participant UserService
+    participant UserModel
+    participant Database
+
+    User->>API: POST /register (username, email, password)
+    API->>UserService: validateInput(data)
+    UserService->>UserModel: createUser(data)
+    UserModel->>Database: INSERT INTO users
+    Database-->>UserModel: User created
+    UserModel-->>UserService: return user object
+    UserService-->>API: return success response
+    API-->>User: 201 Created + user info
+```
