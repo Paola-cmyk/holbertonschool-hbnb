@@ -38,6 +38,7 @@ direction TB
     PresentationLayer --> BusinessLogicLayer : Facade Pattern
     BusinessLogicLayer --> PersistenceLayer : Database Operations
     ```
+---
 
 # Sequence Diagrams for API Calls
 
