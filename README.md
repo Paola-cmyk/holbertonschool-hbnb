@@ -38,3 +38,52 @@ direction TB
     PresentationLayer --> BusinessLogicLayer : Facade Pattern
     BusinessLogicLayer --> PersistenceLayer : Database Operations
     ```
+
+# Sequence Diagrams for API Calls
+
+**User Registration**: 
+
+**Purpose**: To allow a new user to sign up by providing personal details. The system validates and stores the user data securely.
+sequenceDiagram
+    participant User
+    participant API
+    participant UserService
+    participant UserModel
+    participant Database
+
+    User->>API: POST /register (username, email, password)
+    API->>UserService: validateInput(data)
+    UserService->>UserModel: createUser(data)
+    UserModel->>Database: INSERT INTO users
+    Database-->>UserModel: User created
+    UserModel-->>UserService: return user object
+    UserService-->>API: return success response
+    API-->>User: 201 Created + user info
+
+
+**Explanatory notes**: 
+
+
+
+- **Flow**:
+
+User → API: The user submits a ```POST /register``` request with their registration details.
+
+API → UserService: The API delegates to the ```UserService``` to validate the input.
+
+UserService → UserModel: Once validated, it calls the model to create a user object.
+
+UserModel → Database: The model persists the new user record into the database.
+
+Database → UserModel → UserService → API: The created user object is passed back up the chain.
+
+API → User: The API returns a success response along with the user info.
+
+**Layer Roles**
+
+**Presentation Layer**: Receives user input.
+
+**Business Logic Layer**: Validates and processes the data.
+
+**Persistence Layer**: Stores the new user record.
+
