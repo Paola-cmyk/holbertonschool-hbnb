@@ -45,6 +45,8 @@ direction TB
 **User Registration**: 
 
 **Purpose**: To allow a new user to sign up by providing personal details. The system validates and stores the user data securely.
+
+``` mermaid 
 sequenceDiagram
     participant User
     participant API
@@ -60,6 +62,7 @@ sequenceDiagram
     UserModel-->>UserService: return user object
     UserService-->>API: return success response
     API-->>User: 201 Created + user info
+	```
 
 
 **Explanatory notes**: 
