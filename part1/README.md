@@ -74,7 +74,7 @@ v. The system confirms it saved the listing.
 
 vi. The host sees a success message with the new place info.
 
-<a href= "https://github.com/Paola-cmyk/holbertonschool-hbnb/blob/main/part1/review_submission.mmd" target="_blank">**3. Review submission**</a>
+<a href= "https://github.com/Paola-cmyk/holbertonschool-hbnb/blob/main/part1/review_submission.mmd" target="_blank">**3. Review submission diagram**</a>
 
 i. The user writes a review and submits it.
 
@@ -88,7 +88,7 @@ v. A confirmation is sent back.
 
 vi. The user sees that their review was posted successfully.
 
-<a href= "https://github.com/Paola-cmyk/holbertonschool-hbnb/blob/main/part1/fetching_list.mmd" target="_blank">**4. Fetching a list of places**</a>
+<a href= "https://github.com/Paola-cmyk/holbertonschool-hbnb/blob/main/part1/fetching_list.mmd" target="_blank">**4. Fetching a list of places diagram**</a>
 
 i. The user sends a search request with filters like location and guest number.
 
