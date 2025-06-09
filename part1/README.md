@@ -1,14 +1,14 @@
 # holbertonschool-hbnb: The blueprint
 
- **Project overview**: HBnB Evolution is a web application inspired by AirBnB, built to handle user sign-ups, property listings, user reviews, and amenity management. This document acts as a detailed technical guide to help during all stages of development. It outlines the system’s structure and design, ensuring everything stays consistent and easy to maintain as the project grows.
+ **Project overview**: HBnB Evolution is a web application inspired by AirBnB, built to handle user sign-ups, property listings, user reviews, etc. This document acts as a detailed technical guide to help during all stages of development. It will help with the  outlines of the system’s structure and design.
 
- This document focuses on the following key areas:
+ This focuses on the following areas:
 
-**System Architecture**: A high-level look at how the application is organized, including a breakdown of the layered architecture and the use of the Facade design pattern.
+**System Architecture**: A high-level look at how the application is organized.
 
-**Core Business Logic**: Class diagrams that represent the main entities in the system—User, Place, Review, and Amenity—and how they interact with each other.
+**Core Business Logic**: Class diagrams that represent the main entities in the system User.
 
-**API Workflow**: Sequence diagrams that walk through the main API processes like user registration, creating a place, submitting a review, and retrieving a list of available places.
+**API Workflow**: Sequence diagrams that walk through the main API processes.
 
 # High-Level Package Diagram
 
