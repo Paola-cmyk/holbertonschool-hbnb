@@ -39,9 +39,6 @@ direction TB
     BusinessLogicLayer --> PersistenceLayer : Database Operations
 ```
 
-# High-Level Package Diagram
-
-<a href="https://github.com/Paola-cmyk/holbertonschool-hbnb/blob/main/part1/high_lvl_package.md" target="_blank">**Diagram**</a>
 
 # Detailed Class Diagram for Business Logic Layer
 
