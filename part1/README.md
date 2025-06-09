@@ -46,25 +46,27 @@ direction TB
 
 **1. User**:
     
--  A user is someone who interacts with the app.
+- Represents a person using the app.
 
-**Key Attributes:**
+- Contains information such as name, email, and password.
 
-
-**Key Methods:**
-
-
+- Can register, log in, update their profile, and log out.
 
 **2. Place**:
 
-- Represents the property.
+- Represents a property or listing.
+
+- Has details such as like title, description, price, and location.
 
 **3. Review**:
-- The features related to the property.
+- Feedback or rating left by a user about a place.
+
+- Contains a comment and a rating score
 
 **4. Amenity**:
+- Features or services a place offers, like Wi-Fi or parking.
 
-- Collects feedback.
+- Has a name and description
 
 
 
