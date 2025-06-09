@@ -1,7 +1,6 @@
 # holbertonschool-hbnb: The blueprint
 
- **Project overview**: HBnB Evolution is a web application inspired by AirBnB, built to handle user sign-ups, property listings, user reviews, etc. This document acts as a detailed technical guide to help during all stages of development. It will help with the  outlines of the system’s structure and design.
-
+ **Project overview**: HBnB Evolution is a web application inspired by AirBnB, built to handle user sign-ups, property listings, user reviews, etc. This document acts as a detailed technical guide to help during all stages of development.
  This focuses on the following areas:
 
 **System Architecture**: A high-level look at how the application is organized.
