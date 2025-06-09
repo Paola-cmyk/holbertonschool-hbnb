@@ -45,12 +45,27 @@ direction TB
 <a href= "https://github.com/Paola-cmyk/holbertonschool-hbnb/blob/main/part1/business_logic_layer.mmd" target="_blank">**Diagram**</a>
 
 **1. User**:
+    
+-  A user is someone who interacts with the app.
+
+**Key Attributes:**
+
+
+**Key Methods:**
+
+
 
 **2. Place**:
 
+- Represents the property.
+
 **3. Review**:
+- The features related to the property.
 
 **4. Amenity**:
+
+- Collects feedback.
+
 
 
 
