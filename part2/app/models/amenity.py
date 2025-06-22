@@ -1,6 +1,8 @@
-from models.base_model import BaseModel
+class Amenity:
+    def __init__(self, id, name):
+        self.id = id
+        self.name = name
 
-class Amenity(BaseModel):
-    def __init__(self, name):
-        super().__init__()
-        self.name = name[:50]
+    def to_dict(self):
+        return {'id': self.id, 'name': self.name}
+
