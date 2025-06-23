@@ -5,8 +5,6 @@ Welcome to HBNB! a project where we’re building our own version of AirBnB   fr
 
 Right now, we’re working on:
 - Create and manage places, users, reviews, etc.
-- Save everything to a file 
-- Reload your data anytime
 - Practice writing clean  Python code
 
 
