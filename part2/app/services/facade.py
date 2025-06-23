@@ -1,4 +1,5 @@
 from app.models import Place, User, Amenity, Review
+
 class HBnBFacade:
 
     # -- REVIEW LOGIC --

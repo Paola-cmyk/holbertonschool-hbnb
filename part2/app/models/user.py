@@ -16,3 +16,19 @@ class User(BaseModel):
     def update_profile(self, data):
         self.update(data)
 
+import re
+
+class User:
+    def __init__(self, first_name, last_name, email):
+        if not first_name or not last_name:
+            raise ValueError("First name and last name cannot be empty.")
+        if not self._is_valid_email(email):
+            raise ValueError("Invalid email format.")
+
+        self.first_name = first_name
+        self.last_name = last_name
+        self.email = email
+
+    def _is_valid_email(self, email):
+        return re.match(r"[^@]+@[^@]+\.[^@]+", email)
+

@@ -37,3 +37,20 @@ class Place:
         if not (-180 <= value <= 180):
             raise ValueError("Longitude must be between -180 and 180.")
         self._longitude = value
+
+class Place:
+    def __init__(self, title, price, latitude, longitude, **kwargs):
+        if not title:
+            raise ValueError("Title cannot be empty.")
+        if price < 0:
+            raise ValueError("Price must be non-negative.")
+        if not (-90 <= latitude <= 90):
+            raise ValueError("Latitude must be between -90 and 90.")
+        if not (-180 <= longitude <= 180):
+            raise ValueError("Longitude must be between -180 and 180.")
+
+        self.title = title
+        self.price = price
+        self.latitude = latitude
+        self.longitude = longitude
+
