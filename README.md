@@ -1,9 +1,22 @@
 # Hbnb Project
+Welcome to HBNB! a project where we’re building our own version of AirBnB   from scratch  using Python. This is part of the Holberton School curriculum, and it's all about learning how things work behind the scenes.
 
-This is a holberton school project for the recreation of a simple Airbnb app. We will use different frameworks and tools to get used to the full-stack development.
+## What is it?
+
+Right now, we’re working on:
+- Create and manage places, users, reviews, etc.
+- Save everything to a file 
+- Reload your data anytime
+- Practice writing clean  Python code
+
 
 ## <a href="https://github.com/Paola-cmyk/holbertonschool-hbnb/tree/main/part1" target="_blank">**part1**</a>
 This directory consits of the blueprints and foundations of the Airbnb 
 
 ## <a href="https://github.com/Paola-cmyk/holbertonschool-hbnb/tree/main/part2" target="_blank">**part2**</a>
 Begins the implementation phase of the application based on the design developed on part1.
+
+## Author:
+Built with tears and lots of coffee by a Holberton School student.
+
+- <a href="https://github.com/Paola-cmyk" target="_blank">Paola Gonzalez</a>
