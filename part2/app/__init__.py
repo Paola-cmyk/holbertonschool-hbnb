@@ -9,3 +9,8 @@ def create_app():
     # Register the users namespace
     api.add_namespace(users_ns, path='/api/v1/users')
     return app
+
+def create_app(config_class="config.DevelopmentConfig"):
+    app = Flask(__name__)
+    app.config.from_object(config_class)
+    # ...
