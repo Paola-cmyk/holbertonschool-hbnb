@@ -5,7 +5,6 @@ from models.user import User
 
 api = Namespace('auth', description='Authentication operations')
 
-# Model for input validation
 login_model = api.model('Login', {
     'email': fields.String(required=True, description='User email'),
     'password': fields.String(required=True, description='User password')
