@@ -73,7 +73,7 @@ class PlaceResource(Resource):
     @api.response(404, 'Place not found')
     @api.response(400, 'Invalid input data')
     def put(self, place_id):
-        """Update a place's info"""
+
         data = api.payload
         try:
             place = facade.update_place(place_id, data)
@@ -91,6 +91,6 @@ review_model = api.model('PlaceReview', {
 })
 
 place_model = api.model('Place', {
-    # previous fields...
+
     'reviews': fields.List(fields.Nested(review_model), description='List of reviews')
 })

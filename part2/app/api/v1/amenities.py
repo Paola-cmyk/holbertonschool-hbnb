@@ -19,7 +19,7 @@ class AmenityList(Resource):
     @api.marshal_with(response_model, code=201)
     @api.response(400, 'Invalid input data')
     def post(self):
-        """Register a new amenity"""
+
         data = request.json
         try:
             amenity = facade.create_amenity(data)
@@ -30,7 +30,7 @@ class AmenityList(Resource):
     @api.marshal_list_with(response_model)
     @api.response(200, 'List of amenities retrieved successfully')
     def get(self):
-        """Retrieve a list of all amenities"""
+
         amenities = facade.get_all_amenities()
         return [a.to_dict() for a in amenities]
 
@@ -40,7 +40,7 @@ class AmenityResource(Resource):
     @api.marshal_with(response_model)
     @api.response(404, 'Amenity not found')
     def get(self, amenity_id):
-        """Get amenity details by ID"""
+
         amenity = facade.get_amenity(amenity_id)
         if not amenity:
             api.abort(404, 'Amenity not found')

@@ -22,3 +22,11 @@ class Login(Resource):
 
         access_token = create_access_token(identity={'id': str(user.id), 'is_admin': user.is_admin})
         return {'access_token': access_token}, 200
+    
+    @api.route('/protected')
+    class ProtectedResource(Resource):
+        @jwt_required()
+        def get(self):
+            current_user = get_jwt_identity()
+            user_id = current_user.get("id") if isinstance(current_user, dict) else "unknown"
+            return {'message': f'Hello, user {user_id}'}, 200
