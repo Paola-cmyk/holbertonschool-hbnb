@@ -1,5 +1,17 @@
 import uuid
 from datetime import datetime
+from app import db
+from .base_model import BaseModel
+
+class Place(BaseModel):
+    __tablename__ = 'places'
+
+    title = db.Column(db.String(255), nullable=False)
+    description = db.Column(db.Text)
+    price = db.Column(db.Numeric(10, 2), nullable=False)
+    latitude = db.Column(db.Float)
+    longitude = db.Column(db.Float)
+    owner_id = db.Column(db.String(36), nullable=False)
 
 class Place:
     def __init__(self, title, description, price, latitude, longitude, owner_id, amenities=None, **kwargs):
