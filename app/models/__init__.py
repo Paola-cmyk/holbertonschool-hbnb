@@ -1,7 +1,6 @@
-from app.models import Place
-
-from .place import Place
-from .user import User
-from .amenity import Amenity
-from .review import Review
+# from app.models import Place
+#from app.models import Place
+#from app.user import User
+#from app.amenity import Amenity
+#from app.review import Review
 
