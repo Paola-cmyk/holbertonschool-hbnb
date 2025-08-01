@@ -4,7 +4,6 @@ from app.services.facade import HBnBFacade
 api = Namespace('places', description='Place operations')
 facade = HBnBFacade()
 
-# Models
 amenity_model = api.model('PlaceAmenity', {
     'id': fields.String,
     'name': fields.String
@@ -52,7 +51,6 @@ class PlaceList(Resource):
 
     @api.response(200, 'List of places retrieved successfully')
     def get(self):
-        """Retrieve all places"""
         places = facade.get_all_places()
         return places, 200
 
@@ -62,7 +60,7 @@ class PlaceResource(Resource):
     @api.response(200, 'Place details retrieved successfully')
     @api.response(404, 'Place not found')
     def get(self, place_id):
-        """Retrieve place by ID"""
+
         place = facade.get_place(place_id)
         if not place:
             return {"error": "Place not found"}, 404
