@@ -3,7 +3,6 @@ import os
 import sqlite3
 
 def execute_script(db_path, script_path):
-    """Executes a SQL script file against the SQLite database."""
     try:
         with sqlite3.connect(db_path) as conn:
             with open(script_path, 'r') as script:
@@ -13,7 +12,6 @@ def execute_script(db_path, script_path):
         print(f"Error executing script {script_path}: {e}")
 
 def initialize_database():
-    """Initializes the SQLite database by running schema and seed scripts."""
     base_dir = os.path.dirname(__file__)
     db_path = "/home/franciscobaez/holbertonschool-hbnb/instance/development.db"
     scripts_path = os.path.join(base_dir, "app/persistence", "scripts.sql")
@@ -29,9 +27,8 @@ def initialize_database():
     print("Database initialization complete.")
 
 app = create_app()
-
 with app.app_context():
     initialize_database()
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5500)
+    app.run(debug=True)
