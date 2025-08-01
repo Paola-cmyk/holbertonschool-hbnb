@@ -6,6 +6,9 @@ Welcome to HBNB! a project where we’re building our own version of AirBnB   fr
 Right now, we’re working on:
 - Create and manage places, users, reviews, etc.
 - Practice writing clean  Python code
+- Integrating API
+- Designing the webpage
+- Running the app
 
 
 ## <a href="https://github.com/Paola-cmyk/holbertonschool-hbnb/tree/main/part1" target="_blank">**part1**</a>
