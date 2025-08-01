@@ -1,4 +1,5 @@
 from app import create_app
+from app.models.user import db
 
 app = create_app()
 
