@@ -4,6 +4,29 @@ from app.extensions import db, bcrypt, jwt
 from app.api import api_bp
 import config
 
+def create_app():
+    app = Flask(__name__)
+
+    db.init_app(app)
+    bcrypt.init_app(app)
+    jwt.init_app(app)
+
+    app.register_blueprint(api_bp)
+
+    return app
+
+def create_app():
+    app = Flask(__name__)
+    
+    db.init_app(app)
+    bcrypt.init_app(app)
+    jwt.init_app(app)
+
+
+    app.register_blueprint(api_bp)
+
+    return app
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -29,3 +52,10 @@ def create_app(config_class=config.DevelopmentConfig):
     app.register_blueprint(api_bp)
 
     return app
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Welcome to the HBNB API!"
+

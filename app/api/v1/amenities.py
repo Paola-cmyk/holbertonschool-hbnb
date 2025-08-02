@@ -1,19 +1,26 @@
 from flask_restx import Namespace, Resource, fields
-from app.services import facade 
+from app.services import facade
+from flask import Flask
 
 api = Namespace('amenities', description='Amenities endpoints')
+
 
 amenity_model = api.model('Amenity', {
     'id': fields.String(readonly=True, description='Unique ID of the amenity'),
     'name': fields.String(required=True, description='Amenity name')
 })
 
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Welcome to the HBNB API!"
+
 @api.route('/')
 class AmenitiesList(Resource):
-    @api.doc('list_amenities')
     @api.marshal_list_with(amenity_model)
     def get(self):
-
         return facade.get_all_amenities()
 
     @api.doc('create_amenity')
@@ -38,7 +45,6 @@ class AmenityDetail(Resource):
     @api.expect(amenity_model)
     @api.marshal_with(amenity_model)
     def put(self, amenity_id):
-
         data = api.payload
         updated_amenity = facade.update_amenity(amenity_id, data)
         if not updated_amenity:
