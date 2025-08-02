@@ -1,14 +1,16 @@
 # Hbnb Project
-Welcome to HBNB! a project where we’re building our own version of AirBnB   from scratch  using Python. This is part of the Holberton School curriculum, and it's all about learning how things work behind the scenes.
+Welcome to HBNB! a project where we’re building our own version of AirBnB from scratch using Python.
+
+This is part of the Holberton School curriculum, and it's all about learning how things work behind the scenes.
 
 ## What is it?
+The hbnb app is a clone or its own version of the well known Airbnb app. We used the Holberton logos and images along with the flavicons to implement it into the page and make ir our own version.
 
 Right now, we’re working on:
 - Create and manage places, users, reviews, etc.
-- Practice writing clean  Python code
-- Integrating API
-- Designing the webpage
-- Running the app
+- Practice writing clean Python code
+- Working and integrating API
+- Designing the webpage using, html, css and javascript
 
 
 ## <a href="https://github.com/Paola-cmyk/holbertonschool-hbnb/tree/main/part1" target="_blank">**part1**</a>
@@ -24,6 +26,6 @@ Here is the bones of the Hbnb app, you will find the structure codes and backend
 Here is implemented the frontend development such ass html, css and the images used into building the website
 
 ## Author:
-Built with tears and lots of coffee by a Holberton School student.
+Built with tears by a Holberton School student.
 
 - <a href="https://github.com/Paola-cmyk" target="_blank">Paola Gonzalez</a>
